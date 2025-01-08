@@ -4,7 +4,11 @@ import { Base } from './Base.Page';
 export class LoginPage extends Base {
 
     constructor( page: Page){    
-        super(page)  
+        super(page)
+    }
+
+    async NavigateToUrl(url: string): Promise<void> {
+        super.NavigateToUrl(url)
     }
 
     async loginWithEmailPassword (email : string, password : string) {
