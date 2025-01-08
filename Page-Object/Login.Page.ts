@@ -1,14 +1,11 @@
 import { expect, Page } from 'playwright/test';
 import { Base } from './Base.Page';
 
+
 export class LoginPage extends Base {
 
     constructor( page: Page){    
         super(page)
-    }
-
-    async NavigateToUrl(url: string): Promise<void> {
-        super.NavigateToUrl(url)
     }
 
     async loginWithEmailPassword (email : string, password : string) {
@@ -68,9 +65,18 @@ export class LoginPage extends Base {
         const checkmessage = await this.page.locator('#Email-error').textContent()
         expect(checkmessage).toContain('Nhập Email')
     }
+    
      async CheckMessageWhenEmptyPassword (){
         const checkmessage = await this.page.locator('#Password-error').textContent()
         expect(checkmessage).toContain('Nhập mật khẩu')
     }
+    
+    async NavigateToUrl(url : string) {
+       const loginUrl = `${url}/login` 
+       super.NavigateToUrl(loginUrl)
+       const checktitle = await this.page.getByTitle('#hadc').textContent()
+       expect(checktitle).toContain("Đăng nhập")
+    }
+
 }
 

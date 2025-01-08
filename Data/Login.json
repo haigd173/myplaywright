@@ -1,28 +1,18 @@
-
 {
- "correctAccount" :
-  {
-  "email": "testaccount123@gmail.com",
-  "password" : "Password@1"
-
+  "correctAccount": {
+    "email": "testaccount123@gmail.com",
+    "password": "Password@1"
   },
- "accountdisabled" :
- {
-  "email": "testaccount123@gmail.com",
-  "password" : "Password@12442"
- }, 
-  "accountWithIncorrectPassword": 
-  {
-  "email": "testaccount123@gmail.com",
-  "password" : "Password@12442das"
- }, 
- "accountWithIncorrectEmail":
- {
- "email": "testat123@gmail.com",
-  "password" : "Password@12442das"
- }
- 
-
-
-
+  "accountdisabled": {
+    "email": "testaccount123@gmail.com",
+    "password": "Password@12442"
+  },
+  "accountWithIncorrectPassword": {
+    "email": "testaccount123@gmail.com",
+    "password": "Password@12442das"
+  },
+  "accountWithIncorrectEmail": {
+    "email": "testat123@gmail.com",
+    "password": "Password@12442das"
+  }
 }

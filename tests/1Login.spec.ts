@@ -2,14 +2,17 @@ import {test, expect } from 'playwright/test'
 import { LoginPage } from '../Page-Object/Login.Page'
 import * as  account from "../data/Login.json";
 
+
 test.beforeEach('click icon', async({page})=>{
 
   await page.goto('https://localhost:44336/')
-  const login = new LoginPage(page)
+  
 
 })
 
+
 test.describe('Login succesfully', async () =>{ 
+  
   test('Login succesfully with login button', async({page})=>{
     const login = new LoginPage(page)
     await login.loginWithEmailPassword(account.correctAccount.email,account.correctAccount.password)
