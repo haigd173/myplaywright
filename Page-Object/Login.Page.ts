@@ -61,7 +61,7 @@ export class LoginPage extends Base {
         expect(checkmessage).toContain('Email, mật khẩu không đúng, hoặc tài khoản bị vô hiệu hóa')
     }
 
-    async CheckMessageWhenEmptyEmail (){
+     async CheckMessageWhenEmptyEmail (){
         const checkmessage = await this.page.locator('#Email-error').textContent()
         expect(checkmessage).toContain('Nhập Email')
     }
