@@ -1,28 +1,23 @@
 import {test, expect } from 'playwright/test'
-test('click icon', async({page})=>{
-  await page.goto('https://plusbase-auto.onshopbase.com/products/test-product-earth-projector-photography-lamp')
+import { Search } from "../Page-Object/Search.page"
 
-  await page.locator('.flex.flex-column.w-100.h-100.block-search').click()
+// test('click icon', async({page})=>{
+//   const search = new Search(page)
+//   await page.goto('https://localhost:44336/')
+//   await page.locator('.header-action-link.action-color--black.action-hover-color--golden').locator('li').nth(1).click()
+//   await page.getByPlaceholder('Nhập thông tin tại đây').fill('gaming')
+//   await page.getByRole('button', {name :("Tìm Kiếm")}).click()
+  
+
+//   const listTitle = await page.locator('#layout-3-grid').locator('h6').allTextContents()
+//   console.log(listTitle)
+//   listTitle.forEach(title =>{
+//     expect(title).toContain('Gaming')
+//   })
+// })
+test('TC_9: Verify the product list is not display any products when searches with keyword does not exist.', async ({page})=>{ 
+    await page.goto('https://localhost:44336/')
+    const search = new Search(page)
+    await search.searchWithKeyWord('')
+    search.verifyWhenNoProduct
 })
-// test('product name', async({page})=>{
-//   await page.goto('https://plusbase-auto.onshopbase.com/products/test-product-earth-projector-photography-lamp')
-
-//   await page.locator('[value="product.title"]').click()  //atribute
-
-// })
-// test('product price', async({page})=>{
-//   await page.goto('https://plusbase-auto.onshopbase.com/products/test-product-earth-projector-photography-lamp')
-
-//    const testprice = page.locator('[data-block-id="UYeKWq"]').locator('span')
-//    const GiaGoc = await testprice.nth(1).textContent()
-//    const Giasaukhigiam = await testprice.nth(0).textContent()
-//    const disccout = await testprice.nth(2).textContent()
-
-//    expect(GiaGoc).toContain('$16.89')
-//    expect(Giasaukhigiam).toContain('$12.99')
-//    expect(disccout).toContain('23% off')
-
-
-// })
-
-

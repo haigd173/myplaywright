@@ -1,5 +1,5 @@
 import { expect, Page } from 'playwright/test';
-import { Base } from './Base.Page';
+import { Base } from './Base.page'
 
 
 export class LoginPage extends Base {
@@ -39,7 +39,7 @@ export class LoginPage extends Base {
 
     async ClickLoginNavigation (){
         await this.page.getByRole('navigation').getByRole('link', { name: 'Đăng nhập' }).click()
-        await this.page.waitForTimeout(2000)
+        await this.page.waitForTimeout(500)
     }
 
     async NavigateToLoginPage (){
@@ -71,12 +71,12 @@ export class LoginPage extends Base {
         expect(checkmessage).toContain('Nhập mật khẩu')
     }
     
-    async NavigateToUrl(url : string) {
-       const loginUrl = `${url}/login` 
-       super.NavigateToUrl(loginUrl)
-       const checktitle = await this.page.getByTitle('#hadc').textContent()
-       expect(checktitle).toContain("Đăng nhập")
-    }
+    // async NavigateToUrl(url : string) {
+    //    const loginUrl = `${url}/login` 
+    //    super.NavigateToUrl(loginUrl)
+    //    const checktitle = await this.page.getByTitle('#hadc').textContent()
+    //    expect(checktitle).toContain("Đăng nhập")
+    // }
 
 }
 

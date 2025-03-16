@@ -30,6 +30,9 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    extraHTTPHeaders: {
+      'Authorization': `Token ${process.env.ACCESS_TOKEN}`
+    }
   },
 
   /* Configure projects for major browsers */
@@ -37,9 +40,9 @@ export default defineConfig({
     // {name: 'setup', testMatch: 'auth.setup.ts' },         // setup authentication trước khi thực hiện các phương thức API cần xác thực
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'],}
-        //  storageState:'.auth/user.json'  ,               // đọc trạng thái 
-      // dependencies: ['setup']                          // trước khi chạy chrom sẽ setup trước
+      use: { ...devices['Desktop Chrome'],
+         storageState:'.auth/user.json'} ,               // đọc trạng thái 
+      dependencies: ['setup']                          // trước khi chạy chrom sẽ setup trước
     },
 
     // {

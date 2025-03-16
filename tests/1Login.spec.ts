@@ -1,16 +1,13 @@
 import {test, expect } from 'playwright/test'
-import { LoginPage } from '../Page-Object/Login.Page'
+import { LoginPage } from '../Page-Object/Login.page'
 import * as  account from "../data/Login.json";
 
 
 test.beforeEach('click icon', async({page})=>{
 
   await page.goto('https://localhost:44336/')
-  
-
+  await page.waitForTimeout(500)
 })
-
-
 test.describe('Login succesfully', async () =>{ 
   
   test('Login succesfully with login button', async({page})=>{
