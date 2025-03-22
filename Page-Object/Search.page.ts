@@ -1,6 +1,6 @@
-import test, { Locator, Page } from 'playwright/test'
+import  { Locator, Page } from 'playwright/test'
 import { expect } from 'playwright/test'
-import { Base } from './Base.Page'
+import { Base } from './Base.page'
 import { title } from 'process'
 
 

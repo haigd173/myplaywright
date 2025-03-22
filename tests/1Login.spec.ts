@@ -1,5 +1,5 @@
 import {test, expect } from 'playwright/test'
-import { LoginPage } from '../Page-Object/Login.page'
+import { LoginPage } from '../Page-Object/Login.Page'
 import * as  account from "../data/Login.json";
 
 

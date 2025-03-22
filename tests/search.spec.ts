@@ -1,7 +1,7 @@
 // kiem tra chức năng tìm kiếm có hoạt động đúng hay không
 import { test } from "playwright/test"
 import { Search } from "../Page-Object/Search.page"
-import { LoginPage } from "../Page-Object/Login.page"
+import { LoginPage } from "../Page-Object/Login.Page"
 import * as  account from "../data/Login.json";
 
 
