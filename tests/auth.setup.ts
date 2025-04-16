@@ -16,17 +16,17 @@ const authFile = '.auth/user.json'
 // })
 
 // cách 2 : xác thực bằng Post API
-setup('authentication', async ({request})=>{
- const Authenticationreponse = await request.post('https://conduit-api.bondaracademy.com/api/users/login',{
-    data : {
-      "user" : {email: "tester123@gmail.com", password : "123456"}    
-    }
-  })
-  const AuthenticationreponseBody = await Authenticationreponse.json()
-  const accessToken = await AuthenticationreponseBody.user.token
-  user.origins[0].localStorage[0].value= accessToken
-  fs.writeFileSync(authFile, JSON.stringify(user))
+// setup('authentication', async ({request})=>{
+//  const Authenticationreponse = await request.post('https://conduit-api.bondaracademy.com/api/users/login',{
+//     data : {
+//       "user" : {email: "tester123@gmail.com", password : "123456"}    
+//     }
+//   })
+//   const AuthenticationreponseBody = await Authenticationreponse.json()
+//   const accessToken = await AuthenticationreponseBody.user.token
+//   user.origins[0].localStorage[0].value= accessToken
+//   fs.writeFileSync(authFile, JSON.stringify(user))
 
-  process.env['ACCESS_TOKEN'] =  accessToken
+//   process.env['ACCESS_TOKEN'] =  accessToken
 
-})
+// })

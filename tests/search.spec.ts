@@ -30,7 +30,7 @@ test.describe('Search with keyword',  ()=>{
         })
         test('Laptop legion', async({})=>{
             await search.searchWithKeyWord('legion')
-            search.verifyProductTitleInList('legion')
+            await search.verifyProductTitleInList('legion')
         })
     })
 test.describe('TC_3: Verify that the product list is displays correctly when searching with a partial laptop brand name', async  ()=>{

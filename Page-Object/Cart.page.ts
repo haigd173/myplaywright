@@ -4,15 +4,9 @@ import {Base} from '../Page-Object/Base.page'
 
 
 
-export class Cart extends Base {
+export class Cart extends Base  {
 
-  
-
-    // in product detail 
-
-    private AddtoCartButton :Locator
-    private PaymentButtonOnProductDetail: Locator
-    private itemQuantityField :Locator
+    
 
     // in cart (list) locator for each item
     private removeButton : Locator
@@ -44,9 +38,7 @@ export class Cart extends Base {
 
         /// in item detail
 
-        this.AddtoCartButton =  page.getByRole('button', {name:("Thêm vào giỏ")})
-        this.PaymentButtonOnProductDetail = page.getByRole('button', {name:("Mua ngay")})
-        this.itemQuantityField = page.locator('#quantity')
+       
         
 
         
@@ -74,29 +66,10 @@ export class Cart extends Base {
     }
 
     // Enter quantity of item in detail
-    private async enternQuantityOfItem (quantity : number){
-        await this.itemQuantityField.fill(quantity.toString())
-    }
-    // add item to cart 
-    private async clickOnAddToCartButton (){
-        await this.AddtoCartButton.click()
-    }
+   
     // pick a item in list 
     public async clickOnItemInList( itemNumberInList  : number){
         await this.itemPriceInList.nth(itemNumberInList ).click()
-    }
-    // add to cart with quantity
-    public async addToCartWithQuantity (quantity : number){
-        await this.enternQuantityOfItem(quantity)
-        await this.clickOnAddToCartButton()
-    }
-    // click on buy now 
-    private async clickOnPaymentbuttonOnDetail(){
-        await this.PaymentButtonOnProductDetail.click()
-    }
-
-     private async clickOnPaymentbuttonOnDetailWithQuantity(){
-        await this.PaymentButtonOnProductDetail.click()
     }
     // private async getItemInfoWhenClickOnItemInList (itemNumberInList  : number){
     //     const itemTitleinList = await this.itemTitleInList.nth(itemNumberInList).textContent()
@@ -113,14 +86,7 @@ export class Cart extends Base {
     // }
 
     // Verify the item info in list when click on item is displayed correctly like item info in detail
-    public async verifyItemInfoInlistAndDetail (itemNumberInList  : number){
-        const infoItemClickawait = await this.getItemInfoWhenClickOnItemInList(itemNumberInList)
-        const infoItemDetail = await this.getItemInfoInDetail()
-        expect((await infoItemClickawait).itemTitleinList).toBe(infoItemDetail.itemTitleDetail)
-        expect((await infoItemClickawait).itemPriceinList).toBe(infoItemDetail.itemPriceDetail)
-        expect((await infoItemClickawait).imageSrcList).toBe(infoItemDetail.imageSrcDetail)
-    }
-
+    
 
 
 }

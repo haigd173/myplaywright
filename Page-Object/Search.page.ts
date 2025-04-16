@@ -2,17 +2,20 @@ import  { Locator, Page } from 'playwright/test'
 import { expect } from 'playwright/test'
 import { Base } from './Base.page'
 import { title } from 'process'
+import { LoginPage } from './Login.Page'
 
 
 
 
 
 export class Search extends Base {
-    
+    readonly login : LoginPage
     private SearchIcon : Locator
     private SearchField : Locator
     private SearchButton : Locator
     
+
+
 
     
     constructor(page : Page ){
@@ -62,7 +65,7 @@ export class Search extends Base {
     public async verifyPriceInRange( minPrice: number , maxPrice: number) {
         const allpriceText = await this.page.locator('selector').allTextContents();    
         allpriceText.forEach(item =>{
-            const price = parseInt(item.replace(/[^\d]/g, ''), 10);
+            const price = parseInt(item.replace(/[^\d]/g, ''), 10); //bo dau .
             expect(price).toBeGreaterThanOrEqual(minPrice);
             expect(price).toBeLessThanOrEqual(maxPrice);
         })

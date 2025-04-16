@@ -39,7 +39,7 @@ export class LoginPage extends Base {
 
     async ClickLoginNavigation (){
         await this.page.getByRole('navigation').getByRole('link', { name: 'Đăng nhập' }).click()
-        await this.page.waitForTimeout(500)
+        await this.page.waitForSelector('#Email')
     }
 
     async NavigateToLoginPage (){
