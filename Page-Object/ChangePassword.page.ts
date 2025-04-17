@@ -29,8 +29,9 @@ export class ChangePassword extends Base  {
         this.confirmPassword =page.locator('#PasswordConfirm')
         this.saveButton = page.getByRole('button', {name:(" Lưu ")})
         //message
+         this.messageOnCurentPassword = page.locator('#OldPassword-error')
         this.messageOnNewPassword = page.locator('#NewPassword-error')
-        this.messageOnCurentPassword = page.locator('#OldPassword-error')
+        
         this.messageOnConfirmPassword =page.locator('#PasswordConfirm-error')
         //notification
         this.notificationPopup = page.locator('.swal2-popup.swal2-toast.swal2-show')
@@ -63,19 +64,21 @@ export class ChangePassword extends Base  {
     public async verifyCurentPasswordMessage(expectMessage : string){
        const actualMessage = await this.messageOnCurentPassword.textContent()
        expect(actualMessage).toEqual(expectMessage)
-       expect(this.messageOnCurentPassword).toBeVisible()
+       expect(await this.messageOnCurentPassword).toBeVisible()
+      
     }
     // Expected NewPassword Message
     public async verifyNewPasswordMessage(expectMessage : string){
        const actualMessage = await this.messageOnNewPassword.textContent()
        expect(actualMessage).toEqual(expectMessage)
-       expect(this.messageOnCurentPassword).toBeVisible()
+       expect(await this.messageOnNewPassword).toBeVisible()
+       await this.page.waitForTimeout(500)
     }
     //Expected ConfirmPassword Message
     public async verifyConfirmPasswordMessage(expectMessage : string){
        const actualMessage = await this.messageOnConfirmPassword.textContent()
        expect(actualMessage).toEqual(expectMessage)
-       expect(this.messageOnCurentPassword).toBeVisible()
+       expect(await this.messageOnConfirmPassword).toBeVisible()
     }
     public async verifyUiOfChangePassWordPage(){
         const curentPasswordLabel = this.page.locator('label:has-text("Mật khẩu cũ")')
