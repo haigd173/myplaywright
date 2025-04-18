@@ -36,7 +36,6 @@ export class ChangePassword extends Base  {
         //notification
         this.notificationPopup = page.locator('.swal2-popup.swal2-toast.swal2-show')
         this.notificationMessage  = page.locator('#swal2-title')
-        
     }
 
 
@@ -80,6 +79,7 @@ export class ChangePassword extends Base  {
        expect(actualMessage).toEqual(expectMessage)
        expect(await this.messageOnConfirmPassword).toBeVisible()
     }
+    // UI
     public async verifyUiOfChangePassWordPage(){
         const curentPasswordLabel = this.page.locator('label:has-text("Mật khẩu cũ")')
         const newPasswordLabel = this.page.locator('label:has-text("Mật khẩu mới")')

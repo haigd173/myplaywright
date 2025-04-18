@@ -27,7 +27,7 @@ test.describe('HAPPY CASE : change password successfuly ',  ()=>{
 test('TC_CP_09 : Verify that all UI elements on the Change Password page are displayed correctly.', async ({})=>{
   await changepassword.verifyUiOfChangePassWordPage()
 })
-test.describe('Navigate case :', ()=>{
+test.describe('Negative case:', ()=>{
   test('TC_CP_02 : Verify that change password fails if the new password is too short.', async ({})=>{
   await changepassword.enterCurentPassword('Test123!')
   await changepassword.enterNewPassword('Short')
