@@ -13,7 +13,7 @@ test.beforeEach('login successfuly', async ({page})=>{
   await changepassword.clickOnChangePasswordInAccountInfo() 
     await page.waitForURL('https://localhost:44336/change_password')
 })
-test.describe('HAPPY CASE : change password successfuly ',  ()=>{
+test.describe('Happy Case : change password successfuly ',  ()=>{
   test('TC_CP_1 : change password successfully ', async ({page})=>{
     await changepassword.ChangePasswordSuccessfulyAndResetPasswordAndVerifyNotification('Test123!','NewPass@123')
   })

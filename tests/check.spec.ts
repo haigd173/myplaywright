@@ -98,7 +98,7 @@ test('orderditail check', async ({page})=>{
     console.log('thanhtien',itemthanhtien)
 })
 
-test.skip('Test with existing Chrome profile', async () => {
+test('Test with existing Chrome profile', async () => {
   test.setTimeout(3600 * 1000);
 
   const userDataDir = path.resolve('C:/Users/haiGD/AppData/Local/Google/Chrome/NewUserData');
@@ -165,7 +165,7 @@ test.skip('Test with existing Chrome profile', async () => {
     });
 
     if (!scrollResult.scrolled || scrollResult.currentTop === previousScrollTop) {
-      console.log('📌 Đã cuộn hết danh sách hoặc không thể cuộn thêm.');
+      console.log(' Đã cuộn hết danh sách hoặc không thể cuộn thêm.');
       break;
     }
 
@@ -173,6 +173,6 @@ test.skip('Test with existing Chrome profile', async () => {
     await page.waitForTimeout(1500); // Chờ để load thêm user
   }
 
-  console.log('✅ Quét và unfollow hoàn tất!');
+  console.log(' Quét và unfollow hoàn tất');
   await page.waitForTimeout(5000000); // giữ trang mở để quan sát
 })

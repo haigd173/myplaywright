@@ -56,7 +56,7 @@ export class OderDetail extends Base {
     return this.page.locator('tbody tr').nth(index).locator('td').nth(3)
     }
     getTotalAmountofItem(index :number) :Locator {
-    return this.page.locator('tbody tr').nth(index).locator('td').nth(4)
+    return this.page.locator('tbody tr').nth(index).locator('td').nth(4)    
     }
 
     //method 
