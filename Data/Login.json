@@ -1,7 +1,7 @@
 {
   "correctAccount": {
-    "email": "testaccount123@gmail.com",
-    "password": "Password@1"
+    "email": "correctaccount123@gmail.com",
+    "password": "Test@123456"
   },
   "accountdisabled": {
     "email": "testaccount123@gmail.com",

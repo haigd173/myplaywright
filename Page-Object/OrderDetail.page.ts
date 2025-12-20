@@ -1,4 +1,4 @@
-import {test , expect, Locator} from 'playwright/test'
+import {test , expect, Locator, Page} from 'playwright/test'
 import {Base} from '../Page-Object/Base.page'
 
 
@@ -24,7 +24,7 @@ export class OderDetail extends Base {
 
 
 
-    constructor(page){
+    constructor(page : Page){
         super(page)
        
     // ORDER DETAIL PAGE

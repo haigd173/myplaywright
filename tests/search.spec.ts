@@ -107,7 +107,7 @@ test('TC_11: Verify that the product list is display correctly when user searche
     await search.searchWithKeyWord('len ovo')
     await search.verifyWhenNoProduct
 })
-test('TC_12: Verify that the product list is display correctly when user searches with speace between keyword.', async({})=>{
+test('TC_12: Verify that the product list is display correctly when user searches with speace before keyword.', async({})=>{
             
     await search.searchWithKeyWord(' lenovo')
     await search.verifyProductTitleInList('lenovo')

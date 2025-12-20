@@ -1,9 +1,9 @@
-import {test , expect, Locator} from 'playwright/test'
-import {Base} from '../Page-Object/Base.page'
+import {test , expect, Locator, Page} from 'playwright/test'
+import {Base} from './Base.page'
 
+// Lịch sử đặt hàng ( kiểm tra các đơn hàng đã đặt )
 
-
-export class OrderList extends Base {
+export class OrderHistory extends Base {
       //Check OrderList 
     // private oderNumber : Locator
     // private oderTime : Locator
@@ -12,13 +12,13 @@ export class OrderList extends Base {
     // private totalAmount : Locator
     // private oderDetailButton : Locator
 
-    constructor(page){
+    constructor(page : Page){
         super(page)
-         //Check OrderList 
+    
     
     }
 
-    //Check OrderList Locator
+    //Check OrderList Locator (list )
     getOrderRow(rowIndex : number): Locator{
       return this.page.locator('tbody tr').nth(rowIndex);
     }

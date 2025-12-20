@@ -1,4 +1,4 @@
-import {test , expect, Locator} from 'playwright/test'
+import {test , expect, Locator, Page} from 'playwright/test'
 import {Base} from '../Page-Object/Base.page'
 
 
@@ -21,7 +21,7 @@ export class ChangePassword extends Base  {
    private notificationMessage : Locator
     
     
-    constructor(page){
+    constructor(page : Page){
         super(page)
 
         this.curentPassword = page.locator('#OldPassword')
@@ -100,12 +100,12 @@ export class ChangePassword extends Base  {
         
     }
     // reset password after run test change password successfuly
-    public async ChangePasswordSuccessfulyAndResetPasswordAndVerifyNotification (curentpassword: string, newpassword : string){
+    public async ChangePasswordSuccessfullyAndResetPasswordAndVerifyNotification (curentpassword: string, newpassword : string){
         await this.enterCurentPassword(curentpassword)
         await this.enterNewPassword(newpassword)
         await this.enterConfirmPassword(newpassword)
         await this.clickOnSaveButton()
-        await this.notificationMessage.waitFor()
+        await this.notificationMessage.waitFor({state:'attached'})
         await this.VerifyNotification('Đổi mật khẩu thành công')
         await this.enterCurentPassword(newpassword)
         await this.enterNewPassword(curentpassword)

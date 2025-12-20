@@ -1,4 +1,4 @@
-import {test , expect, Locator} from 'playwright/test'
+import {test , expect, Locator, Page} from 'playwright/test'
 import {Base} from '../Page-Object/Base.page'
 
 
@@ -28,7 +28,7 @@ export class Cart extends Base  {
     private paymentButton : Locator
     
     
-    constructor(page){
+    constructor(page : Page){
         super(page)
 
         // in product list

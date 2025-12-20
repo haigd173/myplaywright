@@ -4,7 +4,7 @@ import { LoginPage } from '../Page-Object/Login.Page'
 import { Cart } from '../Page-Object/Cart.page'
 import * as  account from "../data/Login.json";
 import { locator } from 'codeceptjs';
-import { OrderList } from '../Page-Object/Orderlist.page';
+import { OrderHistory } from '../Page-Object/OrderHistory.page';
 import { OderDetail } from '../Page-Object/OrderDetail.page';
 import { waitForDebugger } from 'inspector';
 import path from 'path'
@@ -98,7 +98,7 @@ test('orderditail check', async ({page})=>{
     console.log('thanhtien',itemthanhtien)
 })
 
-test('Test with existing Chrome profile', async () => {
+test.skip('Test with existing Chrome profile', async () => {
   test.setTimeout(3600 * 1000);
 
   const userDataDir = path.resolve('C:/Users/haiGD/AppData/Local/Google/Chrome/NewUserData');

@@ -1,8 +1,9 @@
-import { Locator } from "playwright";
+import { Locator, Page } from "playwright";
 import { Base } from "./Base.page";
 
 
 
+// 
 export class Checkout extends Base {
 
 
@@ -28,19 +29,19 @@ export class Checkout extends Base {
     private shipfee : Locator
     private totalWithShipfee : Locator
 
-    //Check OrderList 
-    private oderNumber : Locator
-    private oderTime : Locator
-    private oderStatus : Locator
-    private itemTotal : Locator
-    private totalAmount : Locator
-    private OderDetailButton : Locator
+    // //Check OrderList 
+    // private oderNumber : Locator
+    // private oderTime : Locator
+    // private oderStatus : Locator
+    // private itemTotal : Locator
+    // private totalAmount : Locator
+    // private OderDetailButton : Locator
     
 
    
    
  
-    constructor(page){
+    constructor(page :Page){
         super(page)
 
         
@@ -59,15 +60,15 @@ export class Checkout extends Base {
     //ItemList
     this.itemTitleinList = page.locator('tbody tr a')
     this.itemTotalPriceinList = page.locator('tbody span')
-    this.itemQuantity = page.locator('tbody strong').   /// kết quả ( x số lượng) ex: x 1, x 2
+    this.itemQuantity = page.locator('tbody strong')   /// kết quả ( x số lượng) ex: x 1, x 2
 
     this.totalNoShipfee =  page.locator('tfoot tr').first().locator('td')    
     this.disscount =  page.locator('tfoot tr').nth(1).locator('td')    
     this.shipfee =  page.locator('tfoot tr').nth(2).locator('td')    
     this.totalWithShipfee = page.locator('tfoot tr').nth(3).locator('td')  
     
-        
-        
+    
+               
 
     }
 

@@ -9,7 +9,7 @@ import { LoginPage } from './Login.Page'
 
 
 export class Search extends Base {
-    readonly login : LoginPage
+    // readonly login : LoginPage
     private SearchIcon : Locator
     private SearchField : Locator
     private SearchButton : Locator

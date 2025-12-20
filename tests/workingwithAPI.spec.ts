@@ -16,23 +16,25 @@ test.beforeEach(async ({ page }) => {
 
 }); 
 
-// test('check title', async ({ page }) => {
-//   await page.route('https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0', async  (route) => {
-//     const reponse = await route.fetch()
-//     const reponseBody = await reponse.json()
-//      reponseBody.articles[0].title = "this is my name DO CHI HAI "
-//      reponseBody.articles[0].description =
-//       " this is my name DO CHI HA this is my name DO CHI HAI this is my name DO CHI HAI"
-//     await route.fulfill({
-//       body: JSON.stringify(reponseBody)
-//     })
-//    })
-//   await page.goto('https://conduit.bondaracademy.com/')
-//   await page.waitForTimeout(2000);
-//   await expect(page.locator('[class="navbar-brand"]')).toHaveText("conduit");
-//   await expect(page.locator('app-article-preview h1').nth(0)).toHaveText('this is my name DO CHI HAI ')
-//   expect(page.locator('app-article-preview p').nth(0)).toHaveText(' this is my name DO CHI HA this is my name DO CHI HAI this is my name DO CHI HAI')
-// })
+test.skip('check title', async ({ page }) => {
+  await page.route('https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0', async  (route) => {
+    const reponse = await route.fetch()
+    const reponseBody = await reponse.json()
+     reponseBody.articles[0].title = "this is my name DO CHI HAI "
+     reponseBody.articles[0].description =
+      " this is my name DO CHI HA this is my name DO CHI HAI this is my name DO CHI HAI"
+    await route.fulfill({
+      body: JSON.stringify(reponseBody)
+    })
+       console.log(reponseBody)
+
+   })
+  await page.goto('https://conduit.bondaracademy.com/')
+  await page.waitForTimeout(2000);
+  await expect(page.locator('[class="navbar-brand"]')).toHaveText("conduit");
+  await expect(page.locator('app-article-preview h1').nth(0)).toHaveText('this is my name DO CHI HAI ')
+  expect(page.locator('app-article-preview p').nth(0)).toHaveText(' this is my name DO CHI HA this is my name DO CHI HAI this is my name DO CHI HAI')
+})
 // test('delete artice', async ({page, request})=>{
 //   await page.waitForTimeout(3000)
 //   await page.locator('app-article-preview h1').nth(0).click()

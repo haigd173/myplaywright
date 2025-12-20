@@ -1,4 +1,4 @@
-import { expect, Locator } from "@playwright/test";
+import { expect, Locator, Page } from "@playwright/test";
 import { Base } from "./Base.page";
 import { LoginPage } from "./Login.Page";
 
@@ -20,14 +20,14 @@ export class itemDetail extends Base implements DetailPage {
 
     // review
     private reviewLink : Locator
-    private reviewField :Locator
-    private reviewButton : Locator
-    private descriptionLink : Locator
-    private specificationLink : Locator
+    // private reviewField :Locator
+    // private reviewButton : Locator
+    // private descriptionLink : Locator
+    // private specificationLink : Locator
 
 
 
-    constructor(page){
+    constructor(page : Page){
         super(page)
 
         this.AddtoCartButton =  page.getByRole('button', {name:("Thêm vào giỏ")})
