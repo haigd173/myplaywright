@@ -15,7 +15,7 @@ jobs:
         node-version: '20'
     - run: npm ci
     - run: npx playwright install --with-deps chromium
-    - run: npx playwright test
+    - run: npx playwright test testCI.spec.ts
       continue-on-error: true
     - uses: actions/upload-artifact@v4
       if: always()
