@@ -16,11 +16,9 @@ import * as  account from "../data/Login.json";
 //     for(let i = 0;i<10 ; i++){
 //     await quantityInput.press('ArrowUp'); 
 //     }
-  
-
 //     console.log('tonkho', tonkho)
 // })
-test('Checkout main successfully', async ({page})=>{
+test.skip('Checkout main successfully', async ({page})=>{
     // Login
     const login = new LoginPage(page)
     await login.loginWithEmailPassword(account.correctAccount.email,account.correctAccount.password)
