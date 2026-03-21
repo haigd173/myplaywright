@@ -37,10 +37,6 @@ export class Cart extends Base  {
         // this. pictureLinkInList = page.locator('#layout-3-grid').locator('img')//.nth(parameter)  // need parameter itemNumberInList  in list
 
         /// in item detail
-
-       
-        
-
         
     // in cart (list) locator for each item\
     const Itemtable = page.locator('tbody')
