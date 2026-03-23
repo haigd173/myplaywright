@@ -1,0 +1,582 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img [ref=e11]
+      - navigation [ref=e13]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link "Trang Chủ" [ref=e16] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e17]:
+            - link "Laptop" [ref=e18] [cursor=pointer]:
+              - /url: /laptop
+          - listitem [ref=e19]:
+            - link "Phụ kiện" [ref=e20] [cursor=pointer]:
+              - /url: /accessory
+          - listitem [ref=e21]:
+            - link "Khuyến mãi" [ref=e22] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e23]:
+            - link "Tin tức" [ref=e24] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e25]:
+            - link "Liên Hệ" [ref=e26] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e27]:
+            - link "nguyen van a" [ref=e28] [cursor=pointer]:
+              - /url: /infor
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - link " 0" [ref=e31] [cursor=pointer]:
+            - /url: "#offcanvas-add-cart"
+            - generic [ref=e32]: 
+            - generic [ref=e33]: "0"
+        - listitem [ref=e34]:
+          - link "" [ref=e35] [cursor=pointer]:
+            - /url: "#search"
+            - generic [ref=e36]: 
+        - listitem [ref=e37]:
+          - link "" [ref=e38] [cursor=pointer]:
+            - /url: "#offcanvas-about"
+            - generic [ref=e39]: 
+  - text:    
+  - generic [ref=e40]:
+    - button "" [ref=e42] [cursor=pointer]:
+      - generic [ref=e43]: 
+    - generic [ref=e44]:
+      - list [ref=e47]:
+        - listitem [ref=e48]:
+          - link "Trang Chủ" [ref=e49] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e50]:
+          - link "Laptop" [ref=e51] [cursor=pointer]:
+            - /url: /laptop
+        - listitem [ref=e52]:
+          - link "Phụ kiện" [ref=e53] [cursor=pointer]:
+            - /url: /accessory
+        - listitem [ref=e54]:
+          - generic [ref=e55]: Khuyến mãi
+        - listitem [ref=e56]:
+          - generic [ref=e57]: Liên Hệ
+        - listitem [ref=e58]:
+          - link "Giỏ Hàng" [ref=e59] [cursor=pointer]:
+            - /url: /cart
+        - listitem [ref=e60]:
+          - link "Đăng nhập" [ref=e61] [cursor=pointer]:
+            - /url: /login
+      - generic [ref=e62]:
+        - link [ref=e64] [cursor=pointer]:
+          - /url: index.html
+        - generic [ref=e65]:
+          - generic [ref=e66]: "Địa chỉ: 475A Điện Biên Phủ, Phường 25, Quân Bình Thạnh, TP.HCM"
+          - generic [ref=e67]: "Điện thoại: 0123456789"
+          - generic [ref=e68]: "Email: Administrator"
+        - list [ref=e69]:
+          - listitem [ref=e70]:
+            - link "" [ref=e71] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e72]: 
+          - listitem [ref=e73]:
+            - link "" [ref=e74] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e75]: 
+          - listitem [ref=e76]:
+            - link "" [ref=e77] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e78]: 
+          - listitem [ref=e79]:
+            - link "" [ref=e80] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e81]: 
+        - list [ref=e82]:
+          - listitem [ref=e83]: Giỏ Hàng
+          - listitem [ref=e84]: Thanh Toán
+  - generic [ref=e85]:
+    - button "" [ref=e87] [cursor=pointer]:
+      - generic [ref=e88]: 
+    - generic [ref=e89]:
+      - link [ref=e91] [cursor=pointer]:
+        - /url: index.html
+      - generic [ref=e92]:
+        - generic [ref=e93]: "Địa chỉ: 475A Điện Biên Phủ, Phường 25, Quận Bình Thạnh, TP.HCM"
+        - generic [ref=e94]: "Điện thoại: 0123456789"
+        - generic [ref=e95]: "Email: Administrator"
+      - list [ref=e96]:
+        - listitem [ref=e97]:
+          - link "" [ref=e98] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e99]: 
+        - listitem [ref=e100]:
+          - link "" [ref=e101] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e102]: 
+        - listitem [ref=e103]:
+          - link "" [ref=e104] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e105]: 
+        - listitem [ref=e106]:
+          - link "" [ref=e107] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e108]: 
+      - list [ref=e109]:
+        - listitem [ref=e110]:
+          - link "Giỏ Hàng" [ref=e111] [cursor=pointer]:
+            - /url: cart.html
+        - listitem [ref=e112]:
+          - link "Thanh Toán" [ref=e113] [cursor=pointer]:
+            - /url: checkout.html
+  - generic [ref=e114]:
+    - button "" [ref=e116] [cursor=pointer]:
+      - generic [ref=e117]: 
+    - generic [ref=e118]:
+      - heading "Giỏ hàng" [level=4] [ref=e119]
+      - list
+      - generic [ref=e120]:
+        - generic [ref=e121]: "Tổng Tiền :"
+        - generic [ref=e122]: 30.000₫
+      - list [ref=e123]:
+        - listitem [ref=e124]:
+          - link "Xem giỏ hàng" [ref=e125] [cursor=pointer]:
+            - /url: /cart
+        - listitem [ref=e126]:
+          - link "Thanh toán" [ref=e127] [cursor=pointer]:
+            - /url: /checkout
+  - generic [ref=e128]:
+    - button "" [ref=e130] [cursor=pointer]:
+      - generic [ref=e131]: 
+    - generic [ref=e132]:
+      - heading "Wishlist" [level=4] [ref=e133]
+      - list [ref=e134]:
+        - listitem [ref=e135]:
+          - generic [ref=e136]:
+            - link [ref=e137] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e138]:
+              - link "Car Wheel" [ref=e139] [cursor=pointer]:
+                - /url: "#"
+              - generic [ref=e140]: 1 x $49.00
+          - link "" [ref=e142] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e143]: 
+        - listitem [ref=e144]:
+          - generic [ref=e145]:
+            - link [ref=e146] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e147]:
+              - link "Car Vails" [ref=e148] [cursor=pointer]:
+                - /url: "#"
+              - generic [ref=e149]: 3 x $500.00
+          - link "" [ref=e151] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e152]: 
+        - listitem [ref=e153]:
+          - generic [ref=e154]:
+            - link [ref=e155] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e156]:
+              - link "Shock Absorber" [ref=e157] [cursor=pointer]:
+                - /url: "#"
+              - generic [ref=e158]: 1 x $350.00
+          - link "" [ref=e160] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e161]: 
+      - list [ref=e162]:
+        - listitem [ref=e163]:
+          - link "View wishlist" [ref=e164] [cursor=pointer]:
+            - /url: "#"
+  - generic [ref=e165]:
+    - button "×" [ref=e166] [cursor=pointer]
+    - generic:
+      - searchbox "Nhập thông tin tại đây" [ref=e167]
+      - button "Tìm Kiếm" [ref=e168] [cursor=pointer]
+  - navigation "breadcrumb" [ref=e175]:
+    - list [ref=e176]:
+      - listitem [ref=e177]:
+        - link "Trang Chủ" [ref=e178] [cursor=pointer]:
+          - /url: index.html
+        - text: 
+      - listitem [ref=e179]:
+        - link "Sản phẩm" [ref=e180] [cursor=pointer]:
+          - /url: shop-grid-sidebar-left.html
+        - text: 
+      - listitem [ref=e181]: Chi tiết sản phẩm
+  - generic [ref=e184]:
+    - generic [ref=e186]:
+      - group "1 / 1" [ref=e189]:
+        - img "HP Pavilion 15 eg0507TU i5 1135G7/8GB/256GB/Win10 (46M06PA)" [ref=e190]
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - group "1 / 3" [ref=e193] [cursor=pointer]:
+            - img "HP Pavilion 15 eg0507TU i5 1135G7/8GB/256GB/Win10 (46M06PA)" [ref=e194]
+          - group "2 / 3" [ref=e195] [cursor=pointer]:
+            - img "HP Pavilion 15 eg0507TU i5 1135G7/8GB/256GB/Win10 (46M06PA)" [ref=e196]
+          - group "3 / 3" [ref=e197] [cursor=pointer]:
+            - img "HP Pavilion 15 eg0507TU i5 1135G7/8GB/256GB/Win10 (46M06PA)" [ref=e198]
+        - button "Next slide" [ref=e199] [cursor=pointer]: next
+        - button "Previous slide" [ref=e200] [cursor=pointer]: prev
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - heading "HP Pavilion 15 eg0507TU i5 1135G7/8GB/256GB/Win10 (46M06PA)" [level=4] [ref=e204]
+        - generic [ref=e205]:
+          - list [ref=e206]:
+            - listitem [ref=e207]:
+              - generic [ref=e208]: 
+            - listitem [ref=e209]:
+              - generic [ref=e210]: 
+            - listitem [ref=e211]:
+              - generic [ref=e212]: 
+            - listitem [ref=e213]:
+              - generic [ref=e214]: 
+            - listitem [ref=e215]:
+              - generic [ref=e216]: 
+          - link "(0 đánh giá)" [ref=e217] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e218]: 17.990.000₫
+        - generic [ref=e219]:
+          - generic [ref=e220]: Khuyến mãi liên quan
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - text: Nhập mã
+              - strong [ref=e223]: KAOME300
+              - text: giảm thêm 3% tối đa 300.000đ khi thanh toán qua VNPAY-QR.
+              - link "Xem chi tiết" [ref=e224] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e225]:
+              - text: Nhập mã
+              - strong [ref=e226]: KAOME3800
+              - text: giảm thêm 4% tối đa 800.000đ. Áp dụng cho một số sản phẩm Apple trên 20.000.000đ khi thanh toán qua VNPAY-QR.
+              - link "Xem chi tiết" [ref=e227] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e228]:
+        - generic [ref=e230]:
+          - generic [ref=e232]: 
+          - text: Còn lại 166
+        - generic [ref=e233]:
+          - generic [ref=e234]:
+            - generic [ref=e235]: Số Lượng
+            - spinbutton [ref=e237]: "1"
+          - generic [ref=e238]:
+            - generic [ref=e240] [cursor=pointer]: Mua ngay
+            - generic [ref=e242] [cursor=pointer]: Thêm vào giỏ
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - generic [ref=e245]: 
+            - text: Thêm vào yêu thích
+          - generic [ref=e246]:
+            - generic [ref=e247]: 
+            - text: So sánh sản phẩm
+      - generic [ref=e248]:
+        - generic [ref=e249]: "Thương hiệu:"
+        - list [ref=e250]:
+          - listitem [ref=e251]:
+            - link "HP" [ref=e252] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e253]:
+        - generic [ref=e254]: "Danh Mục:"
+        - list [ref=e255]:
+          - listitem [ref=e256]:
+            - link "Laptop Văn phòng" [ref=e257] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e258]:
+        - generic [ref=e259]: "Chia sẻ:"
+        - list [ref=e260]:
+          - listitem [ref=e261]:
+            - generic [ref=e263] [cursor=pointer]: 
+          - listitem [ref=e264]:
+            - link "" [ref=e265] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e266]: 
+          - listitem [ref=e267]:
+            - link "" [ref=e268] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e269]: 
+          - listitem [ref=e270]:
+            - link "" [ref=e271] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e272]: 
+  - generic [ref=e276]:
+    - generic:
+      - list:
+        - listitem:
+          - link "Mô tả sản phẩm":
+            - /url: "#description"
+        - listitem:
+          - link "Thông số kỹ thuật":
+            - /url: "#specification"
+        - listitem:
+          - link "Đánh giá":
+            - /url: "#review"
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - paragraph
+  - generic [ref=e277]:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading "Cùng Laptop Văn phòng" [level=3]
+                - paragraph: Duyệt qua bộ sưu tập các sản phẩm liên quan của chúng tôi.
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - group "1 / 7":
+                    - generic:
+                      - link "HP 240 G8 i3 1005G1/4GB/256GB (342G5PA)":
+                        - /url: /hp-240-g8-i3-1005g14gb256gb-342g5pa-9
+                        - img "HP 240 G8 i3 1005G1/4GB/256GB (342G5PA)"
+                    - generic:
+                      - generic:
+                        - heading "HP 240 G8 i3 1005G1/4GB/256GB (342G5PA)" [level=6]:
+                          - link "HP 240 G8 i3 1005G1/4GB/256GB (342G5PA)":
+                            - /url: hp-240-g8-i3-1005g14gb256gb-342g5pa-9
+                    - generic:
+                      - list:
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                    - generic: 12.590.000₫
+                  - group "2 / 7":
+                    - generic:
+                      - link "Lenovo ThinkBook 14s G2 ITL i5 1135G7/8GB/512GB/Win10 (20VA000NVN)":
+                        - /url: /lenovo-thinkbook-14s-g2-itl-i5-1135g78gb512gbwin10-20va000nvn-16
+                        - img "Lenovo ThinkBook 14s G2 ITL i5 1135G7/8GB/512GB/Win10 (20VA000NVN)"
+                    - generic:
+                      - generic:
+                        - heading "Lenovo ThinkBook 14s G2 ITL i5 1135G7/8GB/512GB/Win10 (20VA000NVN)" [level=6]:
+                          - link "Lenovo ThinkBook 14s G2 ITL i5 1135G7/8GB/512GB/Win10 (20VA000NVN)":
+                            - /url: lenovo-thinkbook-14s-g2-itl-i5-1135g78gb512gbwin10-20va000nvn-16
+                    - generic:
+                      - list:
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                    - generic: 19.990.000₫
+                  - group "3 / 7":
+                    - generic:
+                      - link "Acer Aspire 3 A315 34 P8VA N5030/4GB/256GB//Win10 (NX.HE3SV.00N)":
+                        - /url: /acer-aspire-3-a315-34-p8va-n50304gb256gbwin10-nxhe3sv00n-19
+                        - img "Acer Aspire 3 A315 34 P8VA N5030/4GB/256GB//Win10 (NX.HE3SV.00N)"
+                    - generic:
+                      - generic:
+                        - heading "Acer Aspire 3 A315 34 P8VA N5030/4GB/256GB//Win10 (NX.HE3SV.00N)" [level=6]:
+                          - link "Acer Aspire 3 A315 34 P8VA N5030/4GB/256GB//Win10 (NX.HE3SV.00N)":
+                            - /url: acer-aspire-3-a315-34-p8va-n50304gb256gbwin10-nxhe3sv00n-19
+                    - generic:
+                      - list:
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                    - generic: 8.490.000₫
+                  - group "4 / 7":
+                    - generic:
+                      - link "Acer Swift 3 SF313 53 518Y i5 1135G7/16GB/512GB/Win10 (NX.A4JSV.003)":
+                        - /url: /acer-swift-3-sf313-53-518y-i5-1135g716gb512gbwin10-nxa4jsv003-22
+                        - img "Acer Swift 3 SF313 53 518Y i5 1135G7/16GB/512GB/Win10 (NX.A4JSV.003)"
+                    - generic:
+                      - generic:
+                        - heading "Acer Swift 3 SF313 53 518Y i5 1135G7/16GB/512GB/Win10 (NX.A4JSV.003)" [level=6]:
+                          - link "Acer Swift 3 SF313 53 518Y i5 1135G7/16GB/512GB/Win10 (NX.A4JSV.003)":
+                            - /url: acer-swift-3-sf313-53-518y-i5-1135g716gb512gbwin10-nxa4jsv003-22
+                    - generic:
+                      - list:
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                    - generic: 22.990.000₫
+                  - group "5 / 7":
+                    - generic:
+                      - link "Dell Inspiron 13 5310 i3 1125G4/8GB/256GB/Office H&S2019/Win10 (N3I3116W)":
+                        - /url: /dell-inspiron-13-5310-i3-1125g48gb256gboffice-hs2019win10-n3i3116w-24
+                        - img "Dell Inspiron 13 5310 i3 1125G4/8GB/256GB/Office H&S2019/Win10 (N3I3116W)"
+                    - generic:
+                      - generic:
+                        - heading "Dell Inspiron 13 5310 i3 1125G4/8GB/256GB/Office H&S2019/Win10 (N3I3116W)" [level=6]:
+                          - link "Dell Inspiron 13 5310 i3 1125G4/8GB/256GB/Office H&S2019/Win10 (N3I3116W)":
+                            - /url: dell-inspiron-13-5310-i3-1125g48gb256gboffice-hs2019win10-n3i3116w-24
+                    - generic:
+                      - list:
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                    - generic: 17.490.000₫
+                  - group "6 / 7":
+                    - generic:
+                      - link "Dell Vostro 5502 i5 1135G7/8GB/256GB/Win10 (70231340)":
+                        - /url: /dell-vostro-5502-i5-1135g78gb256gbwin10-70231340-25
+                        - img "Dell Vostro 5502 i5 1135G7/8GB/256GB/Win10 (70231340)"
+                    - generic:
+                      - generic:
+                        - heading "Dell Vostro 5502 i5 1135G7/8GB/256GB/Win10 (70231340)" [level=6]:
+                          - link "Dell Vostro 5502 i5 1135G7/8GB/256GB/Win10 (70231340)":
+                            - /url: dell-vostro-5502-i5-1135g78gb256gbwin10-70231340-25
+                    - generic:
+                      - list:
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                    - generic: 21.390.000₫
+                  - group "7 / 7":
+                    - generic:
+                      - link "Dell Inspiron 14 5410 i5 1135G7/8GB/512GB/2GB MX350/Touch/Win10 (N4I5147W)":
+                        - /url: /dell-inspiron-14-5410-i5-1135g78gb512gb2gb-mx350touchwin10-n4i5147w-26
+                        - img "Dell Inspiron 14 5410 i5 1135G7/8GB/512GB/2GB MX350/Touch/Win10 (N4I5147W)"
+                    - generic:
+                      - generic:
+                        - heading "Dell Inspiron 14 5410 i5 1135G7/8GB/512GB/2GB MX350/Touch/Win10 (N4I5147W)" [level=6]:
+                          - link "Dell Inspiron 14 5410 i5 1135G7/8GB/512GB/2GB MX350/Touch/Win10 (N4I5147W)":
+                            - /url: dell-inspiron-14-5410-i5-1135g78gb512gb2gb-mx350touchwin10-n4i5147w-26
+                    - generic:
+                      - list:
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                        - listitem:
+                          - generic: 
+                    - generic: 25.990.000₫
+              - button "Previous slide" [disabled] [ref=e278] [cursor=pointer]: 
+              - button "Next slide": 
+  - contentinfo [ref=e279]:
+    - generic [ref=e280]:
+      - generic [ref=e283]:
+        - generic [ref=e284]:
+          - generic:
+            - heading "THÔNG TIN" [level=5]
+            - list:
+              - listitem:
+                - link "Liên Hệ":
+                  - /url: contact-us.html
+              - listitem:
+                - link "Quay Lại":
+                  - /url: "#"
+        - generic [ref=e285]:
+          - generic:
+            - heading "TÀI KHOẢN" [level=5]
+            - list:
+              - listitem:
+                - link "Tài Khoản Của Tôi":
+                  - /url: /infor
+              - listitem:
+                - link "Lịch sử mua hàng":
+                  - /url: /list_order
+              - listitem:
+                - link "Sổ địa chỉ":
+                  - /url: "#"
+              - listitem:
+                - link "Đổi mật khẩu":
+                  - /url: /change_password
+        - generic [ref=e286]:
+          - generic:
+            - heading "DANH MỤC" [level=5]
+            - list:
+              - listitem:
+                - link "Laptop":
+                  - /url: /laptop
+              - listitem:
+                - link "Phụ kiện":
+                  - /url: /accessory
+        - generic [ref=e287]:
+          - generic:
+            - heading "THÔNG TIN VỀ CHÚNG TÔI" [level=5]
+            - generic:
+              - paragraph: Chúng tôi là một nhóm sáng tạo tuyệt vời với những sản phẩm hiện đại tối giản và đẹp mắt.
+              - generic: "Địa chỉ: 475A Điện Biên Phủ, Phường 25, Quân Bình Thạnh, TP.HCM Email: aministrator@gmail.com"
+      - generic [ref=e290]:
+        - generic [ref=e291]:
+          - generic:
+            - heading "Theo Dõi Chúng Tôi" [level=4]
+            - list:
+              - listitem:
+                - link "":
+                  - /url: "#"
+                  - generic: 
+              - listitem:
+                - link "":
+                  - /url: "#"
+                  - generic: 
+              - listitem:
+                - link "":
+                  - /url: "#"
+                  - generic: 
+              - listitem:
+                - link "":
+                  - /url: "#"
+                  - generic: 
+        - generic [ref=e292]:
+          - generic:
+            - heading "ĐỪNG BỎ LỠ SẢN PHẨM MỚI NHẤT" [level=4]
+            - generic:
+              - generic:
+                - generic:
+                  - textbox "Địa chỉ Email của bạn..."
+                  - button "SUBSCRIBE!"
+      - generic [ref=e295]:
+        - paragraph [ref=e298]:
+          - text: Copy Right © 2022 By
+          - link "KAOMESHOP" [ref=e299] [cursor=pointer]:
+            - /url: (/)
+        - img "payment" [ref=e303]
+  - button
+  - alert "Đăng nhập thành công" [ref=e304]:
+    - heading "Đăng nhập thành công" [level=2] [ref=e312]
+    - text: "!"
+```

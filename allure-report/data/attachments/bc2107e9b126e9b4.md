@@ -1,0 +1,307 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img [ref=e11]
+      - navigation [ref=e13]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link "Trang Chủ" [ref=e16] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e17]:
+            - link "Laptop" [ref=e18] [cursor=pointer]:
+              - /url: /laptop
+          - listitem [ref=e19]:
+            - link "Phụ kiện" [ref=e20] [cursor=pointer]:
+              - /url: /accessory
+          - listitem [ref=e21]:
+            - link "Khuyến mãi" [ref=e22] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e23]:
+            - link "Tin tức" [ref=e24] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e25]:
+            - link "Liên Hệ" [ref=e26] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e27]:
+            - link "Đăng nhập" [ref=e28] [cursor=pointer]:
+              - /url: /login
+            - list [ref=e29]:
+              - listitem [ref=e30]:
+                - link "Đăng ký" [ref=e31] [cursor=pointer]:
+                  - /url: /register
+              - listitem [ref=e32]:
+                - link "Quên mật khẩu" [ref=e33] [cursor=pointer]:
+                  - /url: /forgot_password
+      - list [ref=e34]:
+        - listitem [ref=e35]:
+          - link " 0" [ref=e36] [cursor=pointer]:
+            - /url: "#offcanvas-add-cart"
+            - generic [ref=e37]: 
+            - generic [ref=e38]: "0"
+        - listitem [ref=e39]:
+          - link "" [ref=e40] [cursor=pointer]:
+            - /url: "#search"
+            - generic [ref=e41]: 
+        - listitem [ref=e42]:
+          - link "" [ref=e43] [cursor=pointer]:
+            - /url: "#offcanvas-about"
+            - generic [ref=e44]: 
+  - text:    
+  - generic [ref=e45]:
+    - button "" [ref=e47] [cursor=pointer]:
+      - generic [ref=e48]: 
+    - generic [ref=e49]:
+      - list [ref=e52]:
+        - listitem [ref=e53]:
+          - link "Trang Chủ" [ref=e54] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e55]:
+          - link "Laptop" [ref=e56] [cursor=pointer]:
+            - /url: /laptop
+        - listitem [ref=e57]:
+          - link "Phụ kiện" [ref=e58] [cursor=pointer]:
+            - /url: /accessory
+        - listitem [ref=e59]:
+          - generic [ref=e60]: Khuyến mãi
+        - listitem [ref=e61]:
+          - generic [ref=e62]: Liên Hệ
+        - listitem [ref=e63]:
+          - link "Giỏ Hàng" [ref=e64] [cursor=pointer]:
+            - /url: /cart
+        - listitem [ref=e65]:
+          - link "Đăng nhập" [ref=e66] [cursor=pointer]:
+            - /url: /login
+      - generic [ref=e67]:
+        - link [ref=e69] [cursor=pointer]:
+          - /url: index.html
+        - generic [ref=e70]:
+          - generic [ref=e71]: "Địa chỉ: 475A Điện Biên Phủ, Phường 25, Quân Bình Thạnh, TP.HCM"
+          - generic [ref=e72]: "Điện thoại: 0123456789"
+          - generic [ref=e73]: "Email: Administrator"
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "" [ref=e76] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e77]: 
+          - listitem [ref=e78]:
+            - link "" [ref=e79] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e80]: 
+          - listitem [ref=e81]:
+            - link "" [ref=e82] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e83]: 
+          - listitem [ref=e84]:
+            - link "" [ref=e85] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e86]: 
+        - list [ref=e87]:
+          - listitem [ref=e88]: Giỏ Hàng
+          - listitem [ref=e89]: Thanh Toán
+  - generic [ref=e90]:
+    - button "" [ref=e92] [cursor=pointer]:
+      - generic [ref=e93]: 
+    - generic [ref=e94]:
+      - link [ref=e96] [cursor=pointer]:
+        - /url: index.html
+      - generic [ref=e97]:
+        - generic [ref=e98]: "Địa chỉ: 475A Điện Biên Phủ, Phường 25, Quận Bình Thạnh, TP.HCM"
+        - generic [ref=e99]: "Điện thoại: 0123456789"
+        - generic [ref=e100]: "Email: Administrator"
+      - list [ref=e101]:
+        - listitem [ref=e102]:
+          - link "" [ref=e103] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e104]: 
+        - listitem [ref=e105]:
+          - link "" [ref=e106] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e107]: 
+        - listitem [ref=e108]:
+          - link "" [ref=e109] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e110]: 
+        - listitem [ref=e111]:
+          - link "" [ref=e112] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e113]: 
+      - list [ref=e114]:
+        - listitem [ref=e115]:
+          - link "Giỏ Hàng" [ref=e116] [cursor=pointer]:
+            - /url: cart.html
+        - listitem [ref=e117]:
+          - link "Thanh Toán" [ref=e118] [cursor=pointer]:
+            - /url: checkout.html
+  - generic [ref=e119]:
+    - button "" [ref=e121] [cursor=pointer]:
+      - generic [ref=e122]: 
+    - generic [ref=e123]:
+      - heading "Giỏ hàng" [level=4] [ref=e124]
+      - list
+      - generic [ref=e125]:
+        - generic [ref=e126]: "Tổng Tiền :"
+        - generic [ref=e127]: 30.000₫
+      - list [ref=e128]:
+        - listitem [ref=e129]:
+          - link "Xem giỏ hàng" [ref=e130] [cursor=pointer]:
+            - /url: /cart
+        - listitem [ref=e131]:
+          - link "Thanh toán" [ref=e132] [cursor=pointer]:
+            - /url: /checkout
+  - generic [ref=e133]:
+    - button "" [ref=e135] [cursor=pointer]:
+      - generic [ref=e136]: 
+    - generic [ref=e137]:
+      - heading "Wishlist" [level=4] [ref=e138]
+      - list [ref=e139]:
+        - listitem [ref=e140]:
+          - generic [ref=e141]:
+            - link [ref=e142] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e143]:
+              - link "Car Wheel" [ref=e144] [cursor=pointer]:
+                - /url: "#"
+              - generic [ref=e145]: 1 x $49.00
+          - link "" [ref=e147] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e148]: 
+        - listitem [ref=e149]:
+          - generic [ref=e150]:
+            - link [ref=e151] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e152]:
+              - link "Car Vails" [ref=e153] [cursor=pointer]:
+                - /url: "#"
+              - generic [ref=e154]: 3 x $500.00
+          - link "" [ref=e156] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e157]: 
+        - listitem [ref=e158]:
+          - generic [ref=e159]:
+            - link [ref=e160] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e161]:
+              - link "Shock Absorber" [ref=e162] [cursor=pointer]:
+                - /url: "#"
+              - generic [ref=e163]: 1 x $350.00
+          - link "" [ref=e165] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e166]: 
+      - list [ref=e167]:
+        - listitem [ref=e168]:
+          - link "View wishlist" [ref=e169] [cursor=pointer]:
+            - /url: "#"
+  - generic [ref=e170]:
+    - button "×" [ref=e171] [cursor=pointer]
+    - generic:
+      - searchbox "Nhập thông tin tại đây" [ref=e172]
+      - button "Tìm Kiếm" [ref=e173] [cursor=pointer]
+  - navigation "breadcrumb" [ref=e180]:
+    - list [ref=e181]:
+      - listitem [ref=e182]:
+        - link "Trang Chủ" [ref=e183] [cursor=pointer]:
+          - /url: /
+        - text: 
+      - listitem [ref=e184]: Đăng nhập
+  - generic [ref=e189]:
+    - heading "Đăng Nhập" [level=3] [ref=e190]
+    - generic [ref=e191]:
+      - generic [ref=e192]: Tên Đăng Nhập *
+      - textbox [ref=e194]
+      - generic [ref=e195]:
+        - generic [ref=e196]: Mật Khẩu *
+        - link "Quên Mật Khẩu ?" [ref=e197] [cursor=pointer]:
+          - /url: /forgot_password
+      - textbox [ref=e199]
+      - button "Đăng Nhập" [ref=e201] [cursor=pointer]
+      - generic [ref=e202]:
+        - generic [ref=e203]: Chưa có tài khoản?
+        - link "Đăng ký" [ref=e204] [cursor=pointer]:
+          - /url: /register
+  - contentinfo [ref=e205]:
+    - generic [ref=e206]:
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - generic:
+            - heading "THÔNG TIN" [level=5]
+            - list:
+              - listitem:
+                - link "Liên Hệ":
+                  - /url: contact-us.html
+              - listitem:
+                - link "Quay Lại":
+                  - /url: "#"
+        - generic [ref=e211]:
+          - generic:
+            - heading "TÀI KHOẢN" [level=5]
+            - list:
+              - listitem:
+                - link "Tài Khoản Của Tôi":
+                  - /url: /infor
+              - listitem:
+                - link "Lịch sử mua hàng":
+                  - /url: /list_order
+              - listitem:
+                - link "Sổ địa chỉ":
+                  - /url: "#"
+              - listitem:
+                - link "Đổi mật khẩu":
+                  - /url: /change_password
+        - generic [ref=e212]:
+          - generic:
+            - heading "DANH MỤC" [level=5]
+            - list:
+              - listitem:
+                - link "Laptop":
+                  - /url: /laptop
+              - listitem:
+                - link "Phụ kiện":
+                  - /url: /accessory
+        - generic [ref=e213]:
+          - generic:
+            - heading "THÔNG TIN VỀ CHÚNG TÔI" [level=5]
+            - generic:
+              - paragraph: Chúng tôi là một nhóm sáng tạo tuyệt vời với những sản phẩm hiện đại tối giản và đẹp mắt.
+              - generic: "Địa chỉ: 475A Điện Biên Phủ, Phường 25, Quân Bình Thạnh, TP.HCM Email: aministrator@gmail.com"
+      - generic [ref=e216]:
+        - generic [ref=e217]:
+          - generic:
+            - heading "Theo Dõi Chúng Tôi" [level=4]
+            - list:
+              - listitem:
+                - link "":
+                  - /url: "#"
+                  - generic: 
+              - listitem:
+                - link "":
+                  - /url: "#"
+                  - generic: 
+              - listitem:
+                - link "":
+                  - /url: "#"
+                  - generic: 
+              - listitem:
+                - link "":
+                  - /url: "#"
+                  - generic: 
+        - generic [ref=e218]:
+          - generic:
+            - heading "ĐỪNG BỎ LỠ SẢN PHẨM MỚI NHẤT" [level=4]
+            - generic:
+              - generic:
+                - generic:
+                  - textbox "Địa chỉ Email của bạn..."
+                  - button "SUBSCRIBE!"
+      - generic [ref=e221]:
+        - paragraph [ref=e224]:
+          - text: Copy Right © 2022 By
+          - link "KAOMESHOP" [ref=e225] [cursor=pointer]:
+            - /url: (/)
+        - img "payment" [ref=e229]
+  - button
+```

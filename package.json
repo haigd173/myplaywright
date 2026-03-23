@@ -2,14 +2,17 @@
   "name": "myplaywright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+  "allureReport": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
-    "@types/node": "^22.10.2"
+    "@types/node": "^22.10.2",
+    "allure-playwright": "^3.6.0"
   },
   "dependencies": {
     "xlsx": "^0.18.5"

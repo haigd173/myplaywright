@@ -1,0 +1,1 @@
+Bounding box: { x: 47.5, y: 268.859375, width: 171.046875, height: 0 }
