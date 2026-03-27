@@ -8,7 +8,7 @@ Framework: Playwright
 
 Pattern: Page Object Model (POM)
 
-CI/CD: GitHub Actions
+CI: GitHub Actions
 
 Reporting: Playwright HTML Reporter
 
